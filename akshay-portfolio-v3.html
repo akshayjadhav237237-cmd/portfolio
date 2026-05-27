@@ -44,7 +44,16 @@ body {
   color: var(--white);
   font-family: var(--ff-body);
   overflow-x: hidden;
-  cursor: none;
+}
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+@media (pointer: coarse) {
+  #cursor-dot, #cursor-circle {
+    display: none !important;
+  }
 }
 
 /* ━━━ CURSOR ━━━ */
@@ -806,15 +815,16 @@ footer {
 
 /* ━━━ MOBILE ━━━ */
 @media(max-width:960px){
-  nav{padding:18px 24px;}
+  nav, nav.compact { padding: 14px 24px; }
   .nav-links,.nav-cta{display:none;}
-  .section,#hero,#contact,#who,#hackathons{padding:80px 24px;}
-  .about-layout,.proj-row,.ach-layout,.hk-grid{ grid-template-columns:1fr; gap:20px; }
-  .proj-row{ display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+  .section,#hero,#contact,#who,#hackathons{padding:60px 24px;}
+  .about-layout,.ach-layout,.hk-grid{ grid-template-columns:1fr; gap:20px; }
+  .proj-row{ display:flex; flex-direction:column; align-items:flex-start; gap:12px; padding:24px; }
+  .proj-stack{ justify-content:flex-start; }
   .hero-bottom{ flex-direction:column; gap:32px; align-items:flex-start; }
   .hero-nums{ gap:24px; }
-  #who{grid-template-columns:1fr; gap:40px;}
-  .ach-big{grid-template-columns:1fr;}
+  #who{grid-template-columns:1fr; gap:40px; padding:60px 24px;}
+  .ach-big{grid-template-columns:1fr; padding:32px 24px;}
   .ach-big-badge{display:none;}
   footer{flex-direction:column; gap:14px; text-align:center;}
 }
