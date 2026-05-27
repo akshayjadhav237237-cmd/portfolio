@@ -1,4 +1,4 @@
-# Akshay Jadhav — Portfolio V3
+# Akshay Jadhav — Portfolio
 
 Welcome to the official repository for my personal developer portfolio. This is a sleek, modern, and highly interactive single-page portfolio designed to showcase my projects, hackathon wins, technical skillset, and contact information.
 
